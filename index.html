@@ -1,0 +1,28 @@
+<html>
+          <title>CLOCK</title>
+          <head>
+                    <script src="angular.js"></script>
+                    <script src="script.js"></script>
+          <style>
+                    body {
+          background: black;
+      }
+      
+      .clock {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          color:white;
+          font-size: 50px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          letter-spacing: 7px;  
+      }
+          </style>          
+          </head>
+          <body >
+                    <div class="clock" ng-app ="myClock" ng-controller = "myCtrl">
+                              {{time}}
+                    </div>                 
+          </body>
+</html>
